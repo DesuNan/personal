@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
 }
-
 #header {
     position: fixed;
     top: 0;
@@ -13,25 +20,97 @@ body {
     padding: 15px;
     overflow-y: auto;
 }
+/* Style the navigation bar */
+.navbar {
+    background-color: #f8f9fa; /* Set background color */
+}
+
+/* Style the brand link */
+.navbar-brand {
+    color: #333; /* Set brand text color */
+}
+
+/* Style the toggle button */
+.navbar-toggler {
+    border-color: #007bff; /* Set border color */
+}
+
+/* Change color of toggle button icon */
+.navbar-toggler-icon {
+    background-color: #007bff; /* Set icon color */
+}
+
+/* Style the toggle button icon on hover */
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #0056b3; /* Set hover icon color */
+}
+
+/* Remove bullet points from the navigation links */
+.navbar-nav {
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default left padding */
+}
+
+/* Style the navigation links */
+.navbar-nav .nav-link {
+    color: #333; /* Set text color */
+    padding: 0.5rem 1rem; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change color of active link */
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Set active link color */
+}
+
+/* Add some spacing between the links */
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Add hover effect to links */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
 
 .bubble-font {
     font-family: 'Baloo Tamma 2', cursive;
-    font-size: 60px;
-    color: #000000;
+    font-size: 100px;
+    color: #fff;
     text-shadow: 3px 3px 0px rgba(0,0,139,0.5);
     padding: 20px 30px;
     border-radius: 20px;
     display: inline-block;
     font-weight: bold;
     display: inline-block;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+.iam{
+    padding-left: 25%;
+    font-size: 2rem;
+    color: #fff
+}
+span{
+    color: yellow;
 }
 
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpg") top right no-repeat;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    background: url("images/profilepic1.jpg") top right no-repeat;
+    zoom: -2;
     background-size: cover;
     position: relative;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
 }
 
 section {
@@ -79,3 +158,37 @@ section {
     .section-title p {
         margin-bottom: 0;
     }
+
+    .social-links {
+        padding-left: 25%;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        padding-right: 20px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #a71bd1;
+        color: white;
+      }
+      
